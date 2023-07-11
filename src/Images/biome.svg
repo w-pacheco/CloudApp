@@ -1,0 +1,6 @@
+<svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
+    <ellipse style="fill: black; stroke: white; stroke-linecap: round; stroke-width: 8px;" cx="250" cy="250" rx="245" ry="245"></ellipse>
+    <polyline style="fill: black; stroke: white; stroke-linecap: round; stroke-linejoin: round; paint-order: fill; stroke-width: 8px;" points="8.062 255.887 109.841 101.226 151.285 176.058 249.408 18.915 378.612 202.553 428.588 137.715 494.104 247.716"></polyline>
+    <path style="stroke: white; fill: black; stroke-width: 8px;" d="M 54.515 397.938 C 177.645 478.023 347.758 346.028 443.458 400"></path>
+    <text style="fill: white; font-size: 16.5px; white-space: pre;" transform="matrix(7.236809, 0, 0, 7.100471, -1573.008545, -1368.687988)" x="224.019" y="237.93" bx:origin="0.5 0.429952">{biome}</text>
+</svg>

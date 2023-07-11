@@ -1,0 +1,277 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+/* Hides the scrollbar for the body */
+body::-webkit-scrollbar { display: none; }
+::-webkit-scrollbar-track { background: transparent; }
+
+/* The following makes the scrollbar thin */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: var(--darkColor);
+    width: 8px;
+    height: 8px;
+    border: 3px solid transparent;
+    border-radius: 8px;
+    background-clip: content-box;
+}
+
+/* Makes the content flex allowing the user to scroll within the tab */
+content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex: 1;
+    height: 100vh;
+    overflow: overlay;
+    transition: all 300ms;
+    /* background-color: var(--secondaryColor); */
+}
+
+/* Custom CSS */
+.smooth-tranisition { transition: all 300ms ease-in-out; }
+.point, .pointer, tr.point, table.dataTable { cursor: pointer; }
+.strike { text-decoration: line-through !important; }
+.f12, .f-12 { font-size: 12px !important; }
+.f14, .f-14 { font-size: 14px !important; }
+.notification * { color: white; }
+.bold { font-weight: bold !important; }
+.bolder { font-weight: bolder !important; }
+.bold-300 { font-weight: 300 !important; }
+.bold-500 { font-weight: 500 !important; }
+.bold-900 { font-weight: 900 !important; }
+.op-light { opacity: 0.2 !important; } /* Barely see the text over the background */
+.op-medium { opacity: 0.5 !important; } /* See the text more clearly over the background */
+.op-heavy { opacity: 0.9 !important; } /* See the text very clearly over the background */
+
+/* Administrator Tab Custom CSS */
+div#v-pills-administrator li.nav-item a.nav-link.active {
+    background-color: var(--primaryColor);
+    color: white;
+}
+
+div#v-pills-administrator li.nav-item a.nav-link {
+    color: var(--primaryColor);
+}
+
+/* Comment Section */
+user {
+
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 5px;
+    background: rgba(0,0,0,0.1);
+    display: grid;
+    place-content: center;
+}
+
+timestamp {
+    font-size: 12px !important;
+
+    /* margins */
+    margin-right: .5rem!important;
+}
+
+.grabbable {
+    cursor: move; /* fallback if grab cursor is unsupported */
+    cursor: grab;
+    cursor: -moz-grab;
+    cursor: -webkit-grab;
+}
+
+ /* (Optional) Apply a "closed-hand" cursor during drag operation. */
+.grabbable:active {
+    cursor: grabbing;
+    cursor: -moz-grabbing;
+    cursor: -webkit-grabbing;
+}
+
+/* SweetAlerts */
+.swal-button {
+    --bs-btn-padding-x: 0.75rem;
+    --bs-btn-padding-y: 0.375rem;
+    --bs-btn-font-family: ;
+    --bs-btn-font-size: 1rem;
+    --bs-btn-font-weight: 400;
+    --bs-btn-line-height: 1.5;
+    --bs-btn-color: #212529;
+    --bs-btn-bg: transparent;
+    --bs-btn-border-width: 1px;
+    --bs-btn-border-color: transparent;
+    --bs-btn-border-radius: 0.375rem;
+    --bs-btn-hover-border-color: transparent;
+    --bs-btn-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
+    --bs-btn-disabled-opacity: 0.65;
+    --bs-btn-focus-box-shadow: 0 0 0 0.25rem rgba(var(--bs-btn-focus-shadow-rgb), .5);
+    display: inline-block;
+    padding: var(--bs-btn-padding-y) var(--bs-btn-padding-x);
+    font-family: var(--bs-btn-font-family);
+    font-size: var(--bs-btn-font-size);
+    font-weight: var(--bs-btn-font-weight);
+    line-height: var(--bs-btn-line-height);
+    color: var(--bs-btn-color);
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    border: var(--bs-btn-border-width) solid var(--bs-btn-border-color);
+    border-radius: var(--bs-btn-border-radius);
+    background-color: var(--bs-btn-bg);
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    text-transform: none;
+}
+
+.swal-button--confirm, .swal-button--market, .swal-button--facility {
+    --bs-btn-padding-y: 0.25rem;
+    --bs-btn-padding-x: 0.5rem;
+    --bs-btn-font-size: 0.875rem;
+    --bs-btn-border-radius: 0.25rem;
+
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #198754;
+    --bs-btn-border-color: #198754;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #157347;
+    --bs-btn-hover-border-color: #146c43;
+    --bs-btn-focus-shadow-rgb: 60, 153, 110;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #146c43;
+    --bs-btn-active-border-color: #13653f;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #198754;
+    --bs-btn-disabled-border-color: #198754;
+}
+
+.swal-button--confirm:hover, .swal-button--market:hover, .swal-button--facility:hover{
+    color: var(--bs-btn-hover-color) !important;
+    background-color: var(--bs-btn-hover-bg) !important;
+    border-color: var(--bs-btn-hover-border-color) !important;
+}
+
+.swal-button--cancel {
+    --bs-btn-padding-y: 0.25rem;
+    --bs-btn-padding-x: 0.5rem;
+    --bs-btn-font-size: 0.875rem;
+    --bs-btn-border-radius: 0.25rem;
+
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #dc3545;
+    --bs-btn-border-color: #dc3545;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #bb2d3b;
+    --bs-btn-hover-border-color: #b02a37;
+    --bs-btn-focus-shadow-rgb: 225, 83, 97;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #b02a37;
+    --bs-btn-active-border-color: #a52834;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #dc3545;
+    --bs-btn-disabled-border-color: #dc3545;
+}
+
+.swal-button--cancel:hover {
+    color: var(--bs-btn-hover-color) !important;
+    background-color: var(--bs-btn-hover-bg) !important;
+    border-color: var(--bs-btn-hover-border-color) !important;
+}
+
+.swal-modal { width: 515px !important; }
+
+/* Handles missing class in bootstrap v5 */
+.jumbotron {
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+    background-color: #e9ecef;
+    border-radius: .3rem;
+}
+
+/* Custom DataTable button */
+.dt-buttons > button {
+    background-color: transparent;
+    color: #6c757d;
+    border-color: #6c757d;
+}
+.dt-buttons.btn-group { margin-right: 10px !important; }
+.dt-button-collection {
+    padding: 0px !important;
+    width: unset !important;
+}
+div.dt-button-collection .dt-button {
+    border-radius: 4px !important;
+    margin: 4px 0px !important;
+}
+div.dataTables_paginate > ul.pagination > li.paginate_button.active > a.page-link {
+    background-color: var(--primaryColor) !important;
+    border-color: var(--primaryColor) !important;
+}
+div.dataTables_paginate > ul.pagination > li.paginate_button:not(.active) > a.page-link {
+    color: var(--darkColor);
+}
+
+/* Custom jQuery-UI */
+ul.zindex-top { z-index: 2147483647 !important }
+ul.ui-menu.ui-widget.ui-widget-content.ui-autocomplete.ui-front {
+    max-height: 450px !important;
+    overflow: hidden!important;
+    overflow-y: auto !important;
+}
+ul.ui-menu.ui-widget.ui-widget-content.ui-autocomplete.ui-front {
+    /* top-left | top-right | bottom-right | bottom-left */
+    border-radius: 0px 0px 5px 5px;
+}
+
+/* .tooltip {
+	padding: 8px !important;
+	position: absolute !important;
+	z-index: 9999 !important;
+	max-width: 300px !important;
+} */
+/* body .tooltip { border-width: 2px !important; } */
+/* .tooltip .tooltip-arrow { display: none !important; } */
+
+/* div[data-custom-dt-btn-group] > button.btn,  */
+/* div[data-custom-dt-btn-group] > a.btn { */
+    /* padding: 1px 7px 7px 7px !important; */
+    /* padding: 1px 8px 6px 8px !important; */
+/* } */
+/* div[data-custom-dt-btn-group] > button.btn:first-child, 
+div[data-custom-dt-btn-group] > a.btn:first-child {
+    border-radius: 15px 0px 0px 15px !important;
+}
+div[data-custom-dt-btn-group] > button.btn:last-child, 
+div[data-custom-dt-btn-group] > a.btn:last-child {
+    border-radius: 0px 15px 15px 0px !important;
+} */
+div.btn-group > div.dt-button-collection {
+    overflow: scroll !important;
+    /* height: 35em; */
+    min-height: auto;
+    max-height: 75%;
+}
+
+nav#v-pills-tab { padding: 8px 8px !important; }
+nav#v-pills-tab > a.active { border-radius: 10px !important; }
+.modal-header { border: none !important; }
+
+.btn-close {
+    background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-x-circle-fill' viewBox='0 0 16 16'%3E%3Cpath d='M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z'/%3E%3C/svg%3E") center/1.2em auto no-repeat !important;
+}
+
+.btn-resize {
+    background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-aspect-ratio-fill' viewBox='0 0 16 16'%3E%3Cpath d='M0 12.5v-9A1.5 1.5 0 0 1 1.5 2h13A1.5 1.5 0 0 1 16 3.5v9a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5zM2.5 4a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 1 0V5h2.5a.5.5 0 0 0 0-1h-3zm11 8a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-1 0V11h-2.5a.5.5 0 0 0 0 1h3z'/%3E%3C/svg%3E") center/1.2em auto no-repeat !important;
+    margin-right: 5px !important;
+}
+
+.nav .nav-link.nav-sb.active { color: var(--darkColor) !important; }

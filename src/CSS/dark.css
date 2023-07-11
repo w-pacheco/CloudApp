@@ -1,0 +1,103 @@
+/**!
+ * dark.css
+ * 
+ * Bootstrap v5 handles dark theme, the following are pulled from dark.original.css
+ * 
+ * v2023.06.26
+ * (C) 2020-2023 Wilfredo Pacheco
+ */
+
+ :root {
+    --backgroundDark: rgb(51, 49, 49);
+    --textColor: #d3e5f5;
+}
+
+/* Handle input placehholder text */
+/* Chrome, Firefox, Opera, Safari 10.1+ */
+::placeholder { 
+    color: var(--textColor) !important;
+    opacity: 1; /* Firefox */
+}
+
+/* Internet Explorer 10-11 */
+:-ms-input-placeholder { color: var(--textColor) !important; }
+/* Microsoft Edge */
+::-ms-input-placeholder {  color: var(--textColor) !important; }
+/* Handle input date icon */
+::-webkit-calendar-picker-indicator { color: var(--textColor) !important; }
+
+button[data-dismiss=modal] span { color: var(--textColor) !important; }
+
+.jumbotron { 
+    background-color: var(--bs-body-bg) !important;
+    color: var(--bs-body-color) !important;
+}
+.jumbotron button { color: var(--textColor) !important; }
+
+/* Handle dropdown elements; */
+ul.ui-menu { background-color: var(--backgroundDark) !important; }
+ul.ui-menu li > * { color: var(--bs-body-color) !important; }
+ul.ui-menu li > *:hover { color: initial !important; }
+
+/* DataTables */
+.dt-button-collection { background-color: var(--bs-body-bg) !important; }
+.dataTables_info,
+a.dt-button.dropdown-item.buttons-columnVisibility,
+a.dt-button.buttons-colvisRestore {
+    color: var(--bs-body-color) !important;
+}
+a.dt-button.dropdown-item.buttons-columnVisibility:hover,
+a.dt-button.buttons-colvisRestore:hover {
+    color: var(--textColor) !important;
+}
+div.dataTables_paginate > ul.pagination > li.paginate_button > a.page-link {
+    background-color: var(--bs-body-bg) !important;
+}
+
+div.dataTables_paginate > ul.pagination > li.paginate_button:not(.active) > a.page-link {
+    color: var(--bs-body-color) !important;
+    background-color: var(--bs-body-bg) !important;
+}
+
+/* Sweet Alerts */
+.swal-modal, 
+.swal-modal > * {
+    /* background-color: var(--backgroundDark) !important; */
+    /* color: var(--textColor) !important; */
+    background-color: var(--bs-body-bg) !important;
+    color: var(--bs-body-color) !important;
+}
+
+/* NOTE: The items below have not been tested yet; */
+
+/* new updates */
+/* li.list-group-item { background-color: var(--backgroundDark) !important; } */
+
+/* div[contenteditable=true],
+div[contenteditable=true] > * {
+    background: transparent !important;
+    color: lightgrey !important;
+} */
+
+/* Charts.js */
+/* canvas { color: lightgrey !important; } */
+
+/* Full Calendar */
+/* .fc, 
+.fc-day-header { color: var(--textColor) !important; }
+
+.ui-state-highlight, 
+.ui-widget-content .ui-state-highlight, 
+.ui-widget-header .ui-state-highlight {
+    border: 1px solid #dad55e !important;
+    background: #fffa90 !important;
+    color: var(--textColor) !important;
+} */
+
+/* jQuery.smartWizard */
+/* .sw-theme-default>ul.step-anchor>li,
+.nav-item.done > a {
+    background: transparent !important;
+    color: var(--textColor) !important;
+}
+.btn-toolbar.sw-toolbar.sw-toolbar-bottom { background-color: transparent; } */
