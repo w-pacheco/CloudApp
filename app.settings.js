@@ -43,7 +43,8 @@ const { origin } = location;
  * GitHubLink {String}
  * @description When working on a project, this link should point to the github repository if it is available.
  */
-export const GitHubLink = 'https://github.com/Biome-js/Biome-js-v2';
+// export const GitHubLink = 'https://github.com/Biome-js/Biome-js-v2';
+export const GitHubLink = 'https://github.com/w-pacheco/CloudApp';
 
 /**
  * theme {Object}
