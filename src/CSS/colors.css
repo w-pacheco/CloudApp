@@ -1,0 +1,123 @@
+/**
+ * color.css
+ * v2021.04.23
+ * (C) 2020 Wilfredo Pacheco 
+ */
+
+:root {
+    /* Red */
+    --firebrick: firebrick;
+    --SP-darkRed: rgb(110, 1, 56);
+
+    /* Pink */
+    --fuchsia: fuchsia;
+
+    /* Green */
+    --forestgreen: forestgreen;
+    --mediumseagreen: mediumseagreen; /* New */
+
+    /* Blue */
+    --teal: teal;
+    --dodgerblue: dodgerblue;
+    --royalblue: royalblue;
+
+    /* Purple */
+    --mediumorchid: mediumorchid;
+    --blueviolet: blueviolet;
+    --purple: purple; /* New */
+
+    /* Yellow */
+    --darkgoldenrod: darkgoldenrod;
+    --gold: gold;
+    
+    /* Light & Dark Colors */
+    --aliceblue: aliceblue;
+    --darkslategray: darkslategray;
+    --lightblack: #343a40;
+
+    /* Orange */
+    --orange: orange; /* New */
+
+    --white: white;
+}
+
+/* teal */
+.bg-teal { background-color: var(--teal) !important; }
+.border-teal { border-color: var(--teal)!important; }
+.text-teal { color: var(--teal) !important; }
+
+/* aliceblue */
+.bg-aliceblue { background-color: var(--aliceblue) !important; }
+.border-aliceblue { border-color: var(--aliceblue)!important; }
+.text-aliceblue { color: var(--aliceblue) !important; }
+
+/* firebrick */
+.bg-firebrick { background-color: var(--firebrick) !important; }
+.border-firebrick { border-color: var(--firebrick)!important; }
+.text-firebrick { color: var(--firebrick) !important; }
+
+/* darkslategray */
+.bg-darkslategray { background-color: var(--darkslategray) !important; }
+.border-darkslategray { border-color: var(--darkslategray)!important; }
+.text-darkslategray { color: var(--darkslategray) !important; }
+
+/* mediumorchid */
+.bg-mediumorchid { background-color: var(--mediumorchid) !important; }
+.border-mediumorchid { border-color: var(--mediumorchid)!important; }
+.text-mediumorchid { color: var(--mediumorchid) !important; }
+
+/* royalblue */
+.bg-royalblue { background-color: var(--royalblue) !important; }
+.border-royalblue { border-color: var(--royalblue)!important; }
+.text-royalblue { color: var(--royalblue) !important; }
+
+/* darkgoldenrod */
+.bg-darkgoldenrod { background-color: var(--darkgoldenrod) !important; }
+.border-darkgoldenrod { border-color: var(--darkgoldenrod)!important; }
+.text-darkgoldenrod { color: var(--darkgoldenrod) !important; }
+
+/* forestgreen */
+.bg-forestgreen { background-color: var(--forestgreen) !important; }
+.border-forestgreen { border-color: var(--forestgreen)!important; }
+.text-forestgreen { color: var(--forestgreen) !important; }
+
+/* SP-darkRed */
+.bg-SP-darkRed { background-color: var(--SP-darkRed) !important; }
+.border-SP-darkRed { border-color: var(--SP-darkRed)!important; }
+.text-SP-darkRed { color: var(--SP-darkRed) !important; }
+
+/* dodgerblue */
+.bg-dodgerblue { background-color: var(--dodgerblue) !important; }
+.border-dodgerblue { border-color: var(--dodgerblue)!important; }
+.text-dodgerblue { color: var(--dodgerblue) !important; }
+
+/* fuchsia */
+.bg-fuchsia { background-color: var(--fuchsia) !important; }
+.border-fuchsia { border-color: var(--fuchsia)!important; }
+.text-fuchsia { color: var(--fuchsia) !important; }
+
+/* blueviolet */
+.bg-blueviolet { background-color: var(--blueviolet) !important; }
+.border-blueviolet { border-color: var(--blueviolet)!important; }
+.text-blueviolet { color: var(--blueviolet) !important; }
+
+/* New */
+/* mediumseagreen */
+.bg-mediumseagreen { background-color: var(--mediumseagreen) !important; }
+.border-mediumseagreen { border-color: var(--mediumseagreen)!important; }
+.text-mediumseagreen { color: var(--mediumseagreen) !important; }
+
+/* purple */
+.bg-purple { background-color: var(--purple) !important; }
+.border-purple { border-color: var(--purple)!important; }
+.text-purple { color: var(--purple) !important; }
+
+/* orange */
+.bg-orange { background-color: var(--orange) !important; }
+.border-orange { border-color: var(--orange)!important; }
+.text-orange { color: var(--orange) !important; }
+
+/* white */
+.bg-white { background-color: var(--white) !important; }
+.border-white { border-color: var(--white)!important; }
+.text-white { color: var(--white) !important; }

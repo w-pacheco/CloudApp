@@ -1,0 +1,194 @@
+/**
+ * dark.css
+ * v2022.01.20
+ * (C) 2020-2023 Wilfredo Pacheco
+ */
+
+:root {
+    --backgroundDark: rgb(51, 49, 49);
+    /* --backgroundDark: #181B1E; */
+    --textColor: #d3e5f5;
+}
+
+/* Handle input placehholder text */
+/* Chrome, Firefox, Opera, Safari 10.1+ */
+::placeholder { 
+    color: var(--textColor) !important;
+    opacity: 1; /* Firefox */
+}
+
+/* Internet Explorer 10-11 */
+:-ms-input-placeholder { color: var(--textColor) !important; }
+/* Microsoft Edge */
+::-ms-input-placeholder {  color: var(--textColor) !important; }
+/* Handle input date icon */
+::-webkit-calendar-picker-indicator { color: var(--textColor) !important; }
+
+button[data-dismiss=modal] span { color: var(--textColor) !important; }
+
+/* QPP Specific */
+select.nav-select-custom { color: var(--backgroundDark) !important; }
+div#v-pills-menu-content-administrator li.nav-item a.nav-link {
+    /* Changed since the theme's primary color is dark; Custom to QPP; */
+    /* color: var(--primaryColor); */
+    color: white;
+}
+
+/* Main Elements */
+body, table, tr, td, content, 
+main nav a.nav-link.tab.active,
+.sidebar .nav-selected, 
+.sidebar .nav-selected .icon, 
+.jumbotron, 
+.tab-pane,
+.card-body, 
+.card, 
+.modal-header, 
+.modal-header *,
+.modal-body, 
+.modal-body > div.form-group, 
+.modal-footer, 
+ul.list-group > *,
+.accordion-button, 
+.accordion-item,
+div.offcanvas > * {
+    background-color: var(--backgroundDark) !important;
+    color: var(--textColor) !important;
+}
+
+/* Handle dropdown elements; */
+ul.dropdown-menu { background-color: var(--backgroundDark) !important; }
+ul.dropdown-menu li > * { color: var(--textColor) !important; }
+ul.dropdown-menu li > *:hover { color: initial !important; }
+
+#v-pills-settings * { color: var(--textColor) !important; }
+#v-pills-settings *.btn-outline-primary { border-color: var(--textColor); }
+
+/* Administrator Tab */
+table[data-admin-tab=table] *, 
+#adminModal *, 
+div[tab-header] * {
+    color: var(--textColor) !important;
+}
+
+/* Tabs - Global Boostrap Modifications; */
+/* main nav .nav-link.tab.active .icon { fill: white !important; } */
+/* a.badge-light { color: var(--backgroundDark) !important; } */
+
+th { background-color: var(--backgroundDark) !important; }
+div.card-header { background-color: var(--backgroundDark)}
+
+.sidebar .nav-selected .icon {
+    fill: var(--textColor) !important;
+    stroke: var(--darkColor) !important;
+    transform: translateX(-6px) !important;
+}
+
+div.card, 
+div.card-body, 
+div.card-footer, 
+.maincontainer {
+    background: transparent !important;
+    color: var(--textColor) !important;
+}
+
+/* Form Elements */
+label, 
+select:not([disabled]),
+.form-control:not([disabled]),
+select.form-control > option,
+.accordion-button, 
+.accordion-item {
+    background-color: var(--backgroundDark) !important;
+    color: var(--textColor) !important;
+}
+
+/* div.card { border: whitesmoke !important; } */
+.text-warning { opacity: 75% !important; }
+
+.form-control:not([disabled]) {
+    background: transparent !important;
+    color: var(--textColor) !important;
+}
+
+/* This is where the select Icon color is defined */
+.custom-select { background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='4' height='5' viewBox='0 0 4 5'%3e%3cpath fill='royalblue' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e") no-repeat right 0.75rem center/8px 10px !important; }
+ul.cSearch { background: var(--backgroundDark); }
+.strike { color: var(--textColor) !important; }
+.btn { color: var(--textColor) !important; }
+
+svg.page {
+    display: inline-block !important;
+    width: 1em !important;
+    height: 1em !important;
+    stroke-width: 0 !important;
+    stroke: var(--primaryColor) !important;
+    fill: #343a40 !important;
+}
+
+span.badge { color: var(--gray-dark) !important; }
+.badge, .nav-link.active { color: var(--textColor) !important; }
+.badge-warning, .badge-light { color: var(--backgroundDark) !important; }
+
+/* DataTables */
+.dt-button-collection { background-color: var(--backgroundDark) !important; }
+.dataTables_info,
+a.dt-button.dropdown-item.buttons-columnVisibility,
+a.dt-button.buttons-colvisRestore {
+    color: var(--textColor) !important;
+}
+a.dt-button.dropdown-item.buttons-columnVisibility:hover:not(.active),
+a.dt-button.buttons-colvisRestore:hover:not(.active) {
+    color: #343a40 !important;
+}
+/* div.dataTables_paginate > ul.pagination > li.paginate_button > a.page-link {
+    color: lightgrey !important;
+    background-color: var(--backgroundDark) !important;
+} */
+
+div.dataTables_paginate > ul.pagination > li.paginate_button:not(.active) > a.page-link {
+    color: lightgrey !important;
+    background-color: var(--backgroundDark) !important;
+}
+
+/* new updates */
+li.list-group-item { background-color: var(--backgroundDark) !important; }
+
+div[contenteditable=true],
+div[contenteditable=true] > * {
+    background: transparent !important;
+    color: lightgrey !important;
+}
+
+/* Charts.js */
+canvas { color: lightgrey !important; }
+
+/* Full Calendar */
+.fc, 
+.fc-day-header { color: var(--textColor) !important; }
+
+.ui-state-highlight, 
+.ui-widget-content .ui-state-highlight, 
+.ui-widget-header .ui-state-highlight {
+    border: 1px solid #dad55e !important;
+    background: #fffa90 !important;
+    color: var(--textColor) !important;
+}
+
+/* jQuery.smartWizard */
+.sw-theme-default>ul.step-anchor>li,
+.nav-item.done > a {
+    background: transparent !important;
+    color: var(--textColor) !important;
+}
+.btn-toolbar.sw-toolbar.sw-toolbar-bottom { background-color: transparent; }
+
+/* Custom DCIR Dark mode CSS */
+button.nav-link.active { background-color: transparent !important; }
+
+/* Sweet Alerts */
+.swal-modal, 
+.swal-modal > * {
+    background-color: var(--backgroundDark) !important;
+    color: var(--textColor) !important;
+}
